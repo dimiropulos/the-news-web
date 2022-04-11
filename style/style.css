@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    margin-top: 20px;
+}
+
+.header-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-box-right h1 {
+    text-align: center;
+    font-family: 'RB';
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.header-box-left ul {
+    display: flex;
+}
+
+.header-box-left ul a {
+    font-family: 'RB';
+    margin-left: 15px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3A3838;
+    transition: 200ms;
+}
+
+.header-box-left ul a:hover {
+    color: #EF4423;
+}
+
+.header-bg {
+    margin: 15px 0 35px 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-box-one {
+    display: flex;
+    width: 100%;
+}
+
+.main-box-column-one {
+    flex-direction: column;
+    background: #B71C1C;
+    width: 25%;
+}
+
+.main-box-column-one img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-box-column-one_info h2 {
+    font-family: 'RB';
+    font-size: 19px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 8px 15px;
+}
+
+.main-box-column-one_info p {
+    font-family: 'RR';
+    font-size: 16px;
+    line-height: 19px;
+    color: #EBEBEB;
+    margin: 0 15px 8px 15px;
+}
+
+.column-two {
+    background: #6A1B9A;
+}
+
+.info2 h2 {
+    margin: 15px 15px 9px 15px;
+}
+
+.info2 p {
+    margin: 0 15px 7px 15px;
+}
+
+.column-three {
+    background: #303F9F;
+}
+
+.info3 h2 {
+    margin: 8px 15px 7px 15px;
+}
+
+.info3 p {
+    margin: 0 16px 16px 14px;
+}
+
+.column-four {
+    background: #00695C;
+}
+
+.info4 h2 {
+    margin: 14px 15px 9px 15px;
+} 
+
+.info4 p {
+    margin: 0 15px 8px 15px;
+}
+
+.main-box-two {
+    margin: 50px 0;
+}
+
+.main-box-two-up { 
+    margin: 40px auto;
+    text-align: center;
+}
+
+.main-box-two-up h2 {
+    font-family: 'RB';
+    font-size: 22px;
+    line-height: 26px;
+    color: #3A3838;
+}
+
+.main-box-all {
+    background: #EDEDED;
+}
+
+
+/* Код написал @msfRemzi */
+
+.main-box-two-down {
+    display: flex;
+    max-width: 100%;
+}
+
+.main-box-two-down-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-box-two-down-left img  {
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-box-two-down-right h2 {
+    font-family: 'RB';
+    margin: 20px 0 30px 30px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #3A3838;
+}
+
+.main-box-two-down-right p {
+    font-family: 'RR';
+    margin: 30px 0 31px 30px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #686868;
+}
+
+footer {
+    background: #3A3838;
+    max-width: 100%;
+}
+
+footer a img {
+    margin-top: 28px;
+}
+
+.footer-title {
+    margin-bottom: 29px;
+}
+
+.footer-title  span{
+    color: #FFFFFF;
+}
+
+.footer-box-left ul a {
+    color: #FFFFFF;
+    transition: 200ms;
+}
+
+.footer-box-left ul a:hover {
+    color: #EF4423;
+}
+
+/* MEDIA START */
+@media(max-width: 1100px) {
+    .main-box-one {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 18px;
+    }
+
+    .header-box {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    
+
+    .main-box-two-down {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .main-box-two-down-left img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 790px) {
+    .main-box-column-one {
+        width: 100%;
+    }
+
+    .header-box-left ul {
+        flex-wrap: wrap;
+        row-gap: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+
+      
+}
+/* MEDIA END */
